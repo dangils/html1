@@ -1,0 +1,560 @@
+@font-face {
+    font-family: 'HeirofLightBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/HeirofLightBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range:U+0041-005A, U+0061-007A, U+0030-0039;
+}
+*{margin: 0; padding: 0; list-style: none;}
+
+body{ overflow-x: hidden;}
+
+.header{
+
+    position: relative;
+}
+.logo-box{
+    width: 100vw;
+    height: 10vh;
+    background-color: white;
+    position: relative;
+    left: 12vw;
+}
+
+.header .logo{ 
+    position: absolute;
+    width: 8vw;
+    height: 6vh;
+    background:url(../images/logo.png) no-repeat center;
+    padding: 3vh 1vw;
+    background-size: contain;
+    box-sizing: content-box;
+    border: 1px solid rgb(199, 199, 199);
+    z-index: 100;
+    background-color: white;
+    }
+
+.slide{
+    width: 500vw;
+    height: 70vh;
+    transition: transform 0.5s;
+    display: flex;
+    /* flex-wrap: wrap; */
+  
+}
+
+
+.header_bg1{
+    width: 100%;
+    height: 70vh;
+    background: url(../images/porsche-normal.webp) no-repeat center;
+    background-size:cover;
+    
+} 
+
+.header_bg2{
+    width: 100%;
+    height: 70vh;
+    background: url(../images/porsche-normal\ \(1\).webp) no-repeat center;
+    background-size:cover;
+    
+} 
+
+.header_bg3{
+    width: 100%;
+    height: 70vh;
+    background: url(../images/porsche-normal\ \(2\).webp)no-repeat center;
+    background-size:cover;
+    
+} 
+
+.header_bg4{
+    width: 100%;
+    height: 70vh;
+    background: url(../images/porsche-normal\ \(4\).webp)no-repeat center;
+    background-size:cover;
+    
+} 
+
+.header_bg5{
+    width: 100%;
+    height: 70vh;
+    background: url(../images/porsche-normal\ \(3\).webp) no-repeat center;
+    background-size:cover;
+    
+} 
+.header-btn{
+    /* position: relative; */
+    width: 100%;
+    height: 5vh;
+ 
+    padding-top: 2vh;
+    text-align: center;
+}
+.header-btn button{
+width: 20px;
+height: 20px;
+border-radius: 50%;
+background-color: grey;
+border: none;
+}
+
+.header-btn button:hover{
+    background-color: rgb(180, 203, 204);
+}
+
+
+.bg-text{
+    width: 60vw;
+    height: 20vh;
+    left: 10vw;
+    top: 47vh;
+    position: relative;
+    color: white;
+    line-height: 50px;
+    overflow: hidden;
+    
+}
+.bg-text:hover{
+    color: red;
+    transition-duration: 0.5s;
+    
+}
+.bg-text p:first-child{font-size: 40px;}
+.bg-text p:nth-child(2){font-size: 30px;}
+
+
+.models{
+    width: 100vw;
+    height: 110vh;
+    margin-bottom: 2vh;
+    
+}
+
+.models h1{
+    height: 100px;
+    /* position: relative; */
+    margin-left: 200px;
+    margin-top: 10px;
+    font-size: 50px;
+    color: black;
+    z-index: 100;
+
+}
+.models ul{
+    /* position: relative; */
+    /* top:-10vh; */
+    display: flex;
+    flex-wrap: wrap;
+ 
+}
+.models .m1{
+    width: calc(100vw / 3);
+    height: 40vh;
+    background:url(../images/porsche-small\ \(1\).webp) no-repeat center;
+    background-size: cover;
+}
+.models .m2{
+    width: calc(100vw / 3);
+    height: 40vh;
+    background:url(../images/porsche-small\ \(2\).webp) no-repeat center;
+    background-size: cover;
+}
+
+.models .m3{
+    width: calc(100vw / 3);
+    height: 40vh;
+    background:url(../images/porsche-small\ \(3\).webp) no-repeat center;
+    background-size: cover;
+}
+
+.models .m4{
+    /* position: relative; */
+    /* top:10vh; */
+    width: calc(100vw / 3);
+    height: 40vh;
+    background:url(../images/porsche-small\ \(4\).webp) no-repeat center;
+    background-size: cover;
+}
+
+.models .m5{
+    /* position: relative; */
+    /* top:10vh; */
+    width: calc(100vw / 3);
+    height: 40vh;
+    background:url(../images/porsche-small\ \(5\).webp) no-repeat center;
+    background-size: cover;
+}
+
+.models .m6{
+    /* position: relative; */
+    /* top:10vh; */
+    width: calc(100vw / 3);
+    height: 40vh;
+    background:url(../images/porsche-small\(6\).webp) no-repeat center;
+    background-size: cover;
+}
+
+.models p{
+    margin-left: 20px;
+    position: relative; 
+    top: 10px;
+  
+}
+
+.models .m-name{
+    color: white;
+    font-size: 26px;
+}
+
+.models .m-price{
+    color: white;
+    font-size: 20px;
+}
+
+/* usercar box */
+.usedcar{
+    width: 80vw;
+    height: 50vh;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.used-text{
+    width: 80vw;
+    margin: 0 auto;
+
+}
+.used-text p{
+    font-size: 40px;
+
+}
+.used-box{
+    width: 160vw;
+    height: 40vh;
+    transition: transform 0.5s;
+
+}
+.usedcar ul{
+    width: 160vw;
+    height: 60vh; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+div.model-btn{
+    width: 80vw;
+    height: 5vh;
+    margin: 5vh auto 0 auto;
+
+    text-align: center;
+}
+div.model-btn button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: grey;
+    border: none;
+}
+
+.model-btn button:hover{
+        background-color: rgb(180, 203, 204);
+    }
+    
+
+.used-box ul li{
+    text-align: center;
+}
+
+.used-box ul li p{
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px;
+
+    position: relative;
+    top: 35vh;
+    background-color: rgb(58, 57, 57);
+    color: white;
+    font-size: 15px;
+}
+.used-m1{
+
+    width: calc(160vw / 6);
+    height: 40vh;
+    background: url(../images/porsche-normal\ \(5\).webp) no-repeat center;
+    background-size: contain;
+    text-align: center;
+    
+}
+
+
+.used-m2{
+    width: calc(160vw / 6);
+    height: 40vh;
+    background: url(../images/porsche-normal\ \(6\).webp) no-repeat center;
+    background-size: contain;
+    text-align: center;
+}
+
+
+.used-m3{
+    width: calc(160vw / 6);
+    height: 40vh;
+    background: url(../images/porsche-normal\ \(7\).webp) no-repeat center;
+    background-size: contain;
+    text-align: center;
+}
+
+.used-m4{
+    /* display: inline-block; */
+    width: calc(160vw / 6);
+    height: 40vh;
+    background: url(../images/porsche\ used\(3\).webp) no-repeat center;
+    background-size: contain;
+    text-align: center;
+}
+
+.used-m5{
+    
+    width: calc(160vw / 6);
+    height: 40vh;
+    background: url(../images/porsche\ used\(1\).webp) no-repeat center;
+    background-size: contain;
+    text-align: center;
+}
+
+.used-m6{
+
+    width: calc(160vw / 6);
+    height: 40vh;
+    background: url(../images/porsche\ used\(2\).webp) no-repeat center;
+    background-size: contain;
+    text-align: center;
+}
+
+.used-box ul li p:hover{
+    color: red;
+    transition-duration: 0.5s;
+    
+}
+
+/* social 박스*/
+.social{
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+}
+
+
+.social > p{
+    font-size: 40px;
+    margin: 12px 0;
+}
+.social-bg{
+    width: 80vw;
+    height: 50vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.5);
+    z-index: 10;
+    
+}
+.social-bg-1{
+    position: absolute;
+    width: 80vw;
+    height: 50vh;
+    background: url(../images/porsche-normal.jpg) no-repeat center;
+    background-size: cover;
+
+    z-index: 1;
+    
+}
+.social-text{
+    top:23vh;
+    /* margin: 10vh 0; */
+    width: 60vw;
+    position: absolute;
+    margin-left: 20px;
+    z-index: 100;
+    color: white;
+    /* border: 2px solid white; */
+    overflow: hidden;
+}
+.social-text p:first-child{
+    font-size: 25px; }
+
+.social-text ul{
+    color: white;
+    display: flex;
+}
+.social-text li{
+    background-color: gray;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 15px;
+}
+.s-box_1{
+    position: absolute;
+    top:70vh;
+    left: 70vw;
+    display: inline-block;
+    background-color: gray;
+}
+.s-box_1 p{
+    color: white;
+    font-size: 15px;
+    padding: 10px 15px 10px 15px;
+}
+
+/*Shopping Tools*/
+.shop{
+    width: 80vw;
+    height: 50vh;
+    margin: 0 auto;
+  
+}
+
+.shop > p{ font-size: 40px; margin: 10px 0;}
+.shop ul{
+    width: 80vw; height: 35vh;
+    display: flex; 
+  
+}
+
+.shop ul li p{
+    width: 15vw; 
+    height: 10vh;
+    line-height: 10vh;
+    top:70%;
+    padding-left: 5%;
+    font-weight: bold;
+    position: relative; 
+    font-size: 15px;
+    overflow:hidden;
+}
+
+
+.shop .shop_1{
+    width: 27vw;
+    color: white;
+    background: url(../images/porsche-normal\ \(8\).webp) no-repeat center;
+    background-size: cover;
+}
+.shop .shop_2{
+    width: 15vw;
+    color: white;
+    background: url(../images/porsche-normal\ \(9\).webp) no-repeat center;
+    background-size: cover;
+}
+.shop .shop_3{
+    width: 15vw;
+    color: white;
+    background: url(../images/porsche-normal\ \(10\).webp) no-repeat center;
+    background-size: cover;
+}
+.shop .shop_4{
+    width: 23vw;
+    color: white;
+    background: url(../images/porsche-normal\ \(11\).webp) no-repeat center;
+    background-size: cover;
+}
+
+/* Discover */
+.discover{
+    width: 80vw;
+    height: 45vh;
+    margin: 0 auto;
+    
+  
+}
+
+.discover{
+    font-size: 40px;
+}
+
+.discover ul{
+    width: 80vw; height: 35vh;
+    display: flex; 
+    
+}
+
+.dis_1{
+    width: 20vw;
+    height: 35vh;
+    color: white;
+    background: url(../images/porsche-normal\ \(12\).webp) no-repeat center;
+    background-size: cover;
+}
+.dis_2{
+    width: 20vw;
+    height: 35vh;
+    color: white;
+    background: url(../images/porsche-normal\ \(13\).webp) no-repeat center;
+    background-size: cover;
+}
+.dis_3{
+    width: 20vw;
+    height: 35vh;
+    color: white;
+    background: url(../images/porsche-normal\ \(14\).webp) no-repeat center;
+    background-size: cover;
+}
+.dis_4{
+    width: 20vw;
+    height: 35vh;
+    color: white;
+    background: url(../images/porsche-normal\ \(15\).webp) no-repeat center;
+    background-size: cover;
+}
+
+/*bottom menu*/
+div.bottom_menu{
+    width: 80vw;
+    height: 40vh;
+    margin: 10vh auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    overflow: hidden;
+    border-top: 1px solid grey;
+}
+
+ul>li:first-child{
+    font-weight: bold;
+    font-size: 15px;
+}
+ul{
+    font-size: 10px;
+}
+
+
+div.footer{
+    width: 100vw;
+    height: 60vh;
+    background-color: rgb(51, 50, 50);
+}
+div.foot_box{
+    padding-top: 5vh;
+    width: 80vw;
+    margin: 0 auto;
+    color: white;
+   
+}
+
+.foot_text ul li{
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.social-text ul li:hover{
+    background-color: red;
+    transition-duration: 0.5s;
+        
+}
+
+.shop ul li p:hover{
+    color: red;
+    transition-duration: 0.5s;
+        
+}
